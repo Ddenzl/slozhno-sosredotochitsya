@@ -13,7 +13,7 @@
 }
 
 .header {
-  min-height: 668px;
+  min-height: calc(668px - var(--global-padding) * 2);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
@@ -215,7 +215,7 @@
 /* --------------------------------- */
 
 .footer {
-  min-height: 668px;
+  min-height: calc(668px - var(--global-padding) * 2);
   display: flex;
   height: calc(100vh - var(--global-padding) * 2);
   justify-content: center;
