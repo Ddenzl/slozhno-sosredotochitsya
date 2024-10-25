@@ -2,17 +2,18 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--bg-color);
   background: var(--bg-image) center center no-repeat fixed;
   background-size: cover;
+  background-color: var(--bg-color);
   padding: var(--global-padding);
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), monospace;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.3px;
 }
 
 .header {
+  min-height: 668px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
@@ -110,7 +111,7 @@
   content: "rec";
   position: absolute;
   color: var(--accent-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -214,6 +215,7 @@
 /* --------------------------------- */
 
 .footer {
+  min-height: 668px;
   display: flex;
   height: calc(100vh - var(--global-padding) * 2);
   justify-content: center;

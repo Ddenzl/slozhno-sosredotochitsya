@@ -20,20 +20,13 @@
   --title-color: var(--accent-color);
   --bg-image: url(../images/cover-image-dark.png);
   --hover-color: rgba(255, 0, 112, 0.4);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --main-color: var(--accent-color);
-    --logo-color: #DB00FF;
-    --logo-shadow: var(--accent-color);
-    --text-color: #F1B2CE;
-    --decor-color-text: var(--bg-color);
-    --decor-color-bg: var(--main-color);
-    --bg-color: #000028;
-    --title-color: var(--accent-color);
-    --bg-image: url(../images/cover-image-dark.png);
-    --hover-color: rgba(255, 0, 112, 0.4);
+  .header__decor-element::before {
+    display: block;
+  }
+
+  .header__decor-element::after {
+    display: block;
   }
 }
+
